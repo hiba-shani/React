@@ -1,6 +1,20 @@
 
+// import { Link, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import PropsFc from './functional-components/PropsFc'
+import Navbar from './nested-routing/Navbar'
+import Home from './nested-routing/pages/Home'
+import About from './nested-routing/pages/About'
+import Services from './nested-routing/pages/Services'
+// import ProductPage from './dynamic-routing/example/ProductPage'
+// import ProductDetails from './dynamic-routing/example/ProductDetails'
+// import Product from './dynamic-routing/Products'
+// import ProductDetails from './dynamic-routing/ProductDetails'
+// import Home from './react-router-dom/Home'
+// import About from './react-router-dom/about'
+// import Profile from './functional-components/hooks/use-context/user-list/profile'
+// import { UserProvider } from './functional-components/hooks/use-context/user-list/UserContext'
+// import PropsFc from './functional-components/PropsFc'
 // import State from './functional-components/State'
 // import BasicFn from './functional-components/BasicFn'
 // import Fruits from './embeding-expression/fruits'
@@ -25,7 +39,60 @@ function App() {
 
 {/* <BasicFn/> */}
 {/* <State/> */}
-     <PropsFc/>
+     {/* <PropsFc/> */}
+
+     {/* 2.profile name change */}
+     {/* <UserProvider>
+      <Profile/>
+     </UserProvider> */}
+
+     {/* ----react-router-dom---- */}
+     {/* <div>
+      <nav>
+        <Link to='/'>Home</Link>|
+        <Link to='/about'>About</Link>
+      </nav>
+
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+
+        <Route path='/about' element={<About/>}/>
+      </Routes>
+     </div>
+ */}
+{/*----------------- dynamic--routing--- */}
+{/* <Routes>
+<Route path='/' element={<Product/>}/>
+<Route path='/products/:id'element={<ProductDetails/>}/>
+</Routes> */}
+
+{/* ------dynamic routing example */}
+
+
+{/* <Routes>
+  <Route path='/' element={<ProductPage/>}/>
+  <Route path='/products/:id'  element={<ProductDetails/>}/>
+</Routes> */}
+
+
+{/* ----------------nested-routing--------------- */}
+
+<Navbar/>
+<Routes>
+  <Route path='/'element={<Home/>}/>
+  <Route path='/about' element={<About/>}/>
+  {/* nested routes starts here */}
+  
+    <Route  path='/services' element={<Services/>}>
+
+      </Route> 
+
+  
+</Routes>
+
+
+
+
     </>
   )
 }
