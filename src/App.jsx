@@ -1,12 +1,19 @@
 
 // import { Link, Route, Routes } from 'react-router-dom'
-import { Route, Routes } from 'react-router-dom'
-import './App.css'
-import Navbar from './nested-routing/Navbar'
-import Home from './nested-routing/pages/Home'
-import About from './nested-routing/pages/About'
-import Services from './nested-routing/pages/Services'
-// import ProductPage from './dynamic-routing/example/ProductPage'
+// import { Route, Routes } from 'react-router-dom'
+// import './App.css'
+// import BasicForm from './form-validation/BasicForm'
+// import LoginPage from './LoginPage'
+// import Items from './react-keys/Items'
+// import RealWorld from './react-keys/RealWorld'
+// import Navbar from './nested-routing/Navbar'
+// import Home from './nested-routing/pages/Home'
+// import About from './nested-routing/pages/About'
+// import Services from './nested-routing/pages/Services'
+// import WebDev from './nested-routing/pages/services/WebDev'
+// import AppDev from './nested-routing/pages/services/AppDev'
+// import Designs from './nested-routing/pages/services/Designs'
+// // import ProductPage from './dynamic-routing/example/ProductPage'
 // import ProductDetails from './dynamic-routing/example/ProductDetails'
 // import Product from './dynamic-routing/Products'
 // import ProductDetails from './dynamic-routing/ProductDetails'
@@ -22,6 +29,8 @@ import Services from './nested-routing/pages/Services'
 // // import Basic from './embeding-expression/basic'
 // // import Conditional from './embeding-expression/Conditional'
 // // import Some from './embeding-expression/Some'
+
+import NormalForm from "./form-validation/NormalForm"
 
 function App() {
   
@@ -77,18 +86,31 @@ function App() {
 
 {/* ----------------nested-routing--------------- */}
 
-<Navbar/>
+{/* <Navbar/>
 <Routes>
   <Route path='/'element={<Home/>}/>
   <Route path='/about' element={<About/>}/>
   {/* nested routes starts here */}
-  
+{/*   
     <Route  path='/services' element={<Services/>}>
+    <Route path='web-dev' element={<WebDev/>}/>
+    <Route path='app-dev'element={<AppDev/>}/>
+    <Route path='design' element={<Designs/>}/>
 
-      </Route> 
+      </Route>  */}
 
   
-</Routes>
+{/* </Routes> */} 
+
+{/* ---------------react keys-------- */}
+{/* <Items/> */}
+{/* <RealWorld/> */}
+{/* <LoginPage/> */}
+
+{/* -----------------form-validation------------ */}
+
+{/* <BasicForm/> */}
+<NormalForm/>
 
 
 

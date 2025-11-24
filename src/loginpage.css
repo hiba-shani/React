@@ -1,0 +1,84 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+.login-box {
+  width: 50%;
+  background: #ffffff;
+  padding: 70px;
+}
+
+.login-form label {
+  font-size: 14px;
+  color: #444;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.forgot {
+  text-decoration: none;
+  color: #5a3ff6;
+  font-weight: 500;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #6a4df7;
+  color: white;
+}
+
+.btn-google {
+  background: #fff;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.google img {
+  width: 20px;
+}
+
+.signup {
+  text-align: center;
+  margin-top: 15px;
+  color: #444;
+}
+
+.signup{
+  color: #5a3ff6;
+  text-decoration: none;
+  font-weight: 600;
+}
