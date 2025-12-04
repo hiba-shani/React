@@ -30,7 +30,32 @@
 // // import Conditional from './embeding-expression/Conditional'
 // // import Some from './embeding-expression/Some'
 
-import NormalForm from "./form-validation/NormalForm"
+// import ShoppingApp from "./redux/shopping cart with redux toolkit/ShoppingApp"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AuthApp from './authentication-app/AuthApp';
+import { BrowserRouter } from 'react-router-dom';
+
+// import { Provider } from "react-redux"
+// import { store } from "./redux/store/store"
+// import CounterApp from "./redux/CounterApp"
+
+// import CartApp from "./context/CartApp"
+
+// import { CartContext, CartProvider } from "./context/CartContext"
+// import CartItem from "./context/CartItem"
+
+// import ShoppingCart from "./reducers/ShoppingCart"
+
+// import Counter from "./reducers/Counter"
+
+// import AxiosDelete from "./Axios/AxiosDelete"
+
+// import AxiosGet from "./Axios/AxiosGet"
+// import AxiosPost from "./Axios/AxiosPost"
+// import AxiosPut from "./Axios/AxiosPut"
+// 
+
+// import NormalForm from "./form-validation/NormalForm"
 
 function App() {
   
@@ -110,8 +135,34 @@ function App() {
 {/* -----------------form-validation------------ */}
 
 {/* <BasicForm/> */}
-<NormalForm/>
+{/* <NormalForm/> */}
+{/* <Crud/> */}
+{/* -----------------------axios */}
+{/* <AxiosGet/> */}
+{/* <AxiosPost/> */}
+{/* <AxiosPut/> */}
+{/* <AxiosDelete/> */}
 
+{/* -------------------usereducer--------- */}
+{/* <Counter/> */}
+{/* <ShoppingCart/> */}
+{/* -------------context--------- */}
+{/* <CartProvider>
+  
+  
+  
+</CartProvider> */}
+{/* <CartApp/> */}
+
+
+{/* ------------redux---------------- */}
+{/* <Provider store={store}>
+<CounterApp/>
+</Provider> */}
+
+{/* <ShoppingApp/> */}
+
+<AuthApp/>
 
 
 
